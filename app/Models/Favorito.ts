@@ -19,4 +19,6 @@ export default class Favorito extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
+
+  
 }

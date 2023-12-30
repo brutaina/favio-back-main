@@ -20,6 +20,7 @@
 
 import { Response } from '@adonisjs/core/build/standalone'
 import Route from '@ioc:Adonis/Core/Route'
+
 const favoritos=[{id:1,nome:'Google',url:"http://www.google.com",importante:true}]
 
 Route.get('/', async () => {
@@ -57,3 +58,4 @@ Route.post('/favoritos',async ({request, response})=>{
 
 
 Route.resource('favoritao', 'FavoritosController').apiOnly()
+//Route.resource('Favorito', 'UserController').apiOnly()
